@@ -3,10 +3,10 @@ fold in half
 fold one-half of paper back on itself so the corners line up and mirror it on the other side
 // CSCI 1550: HW 1, Problem 2 
 // Filename: hw1pr2.txt 
-// Name(s): 
+// Name(s): gage hays
 //
 // Task 1: Blow me away - says the paper airplane!
 type paper
 function fold piece of paper in half and press down the fold
-function grab one corner and fold back on itself so the corners line up
-function grab other corner and fold back on itself so the corners line up
+function grab corner and fold back on itself so the corners line up and press down the fold
+function grab corner and fold back on itself so the corners line up and press down the fold
