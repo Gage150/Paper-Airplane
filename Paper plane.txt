@@ -1,12 +1,23 @@
-grab piece of paper
-fold in half
-fold one-half of paper back on itself so the corners line up and mirror it on the other side
-// CSCI 1550: HW 1, Problem 2 
-// Filename: hw1pr2.txt 
-// Name(s): gage hays
-//
-// Task 1: Blow me away - says the paper airplane!
-type paper
-function fold piece of paper in half and press down the fold
-function grab corner and fold back on itself so the corners line up and press down the fold
-function grab corner and fold back on itself so the corners line up and press down the fold
+// CSCI 1550: HW 1, Problem 2
+// Filename: hw1pr2.txt
+// Name(s): Gage, Kathrynne
+
+# Procedure
+* Get Unfolded Paper
+* Get list of operations required for the user's desired folded plane
+* For each operation, apply fold operation to our unfolded paper
+
+# Pseudocode
+```coral
+type PaperSheet // our paper sheet, contains data about the order of folds
+type FoldingStep // operation that folds a PaperSheet. Contains a vector that defines the line that the paper is folded across
+
+Function FoldPaper(PaperSheet unfolded_paper, FoldingStep fold) returns PaperSheet folded_paper
+    // returns a new PaperSheet struct that represents `unfolded_paper` with the FoldingStep `fold` appended
+
+Function CreatePlane(PaperSheet unfolded_paper, FoldingStep array(?) operations) returns PaperSheet folded_plane
+    folded_plane = unfolded_paper
+    // i would rather use iterators/streams for this but that's a very language-specific thing
+    for int i = 0; i < operations.length(); i++
+        folded_plane = FoldPaper(unfolded_paper, operations[i]
+```
